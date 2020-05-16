@@ -2,9 +2,23 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
+// Hide the Modal
+let hiddenModal = document.getElementById("modal")
+hiddenModal.hidden = true || false;
 
 
+//add listener to like button
+let likeIcons = document.getElementsByClassName("like");
+
+function listenToTags() {
+  for (let i = 0; i < likeIcons.length; i++) {
+    likeIcons[i].addEventListener("click", function() {
+      alert("I was clicked");
+    });
+  }
+}
+
+listenToTags();
 
 
 //------------------------------------------------------------------------------
